@@ -21,10 +21,26 @@ client = OpenAI(
 )
 
 chat_completion = client.chat.completions.create(
-    messages=[
+   messages=[
         {
+	    # Cài đặt cách trả lời, nhiệm vụ của bot
+            "role": "system",
+            "content": "You are a friendly and flirty female tour guide.",
+        },
+        {
+	    # Câu hỏi gốc của bạn
             "role": "user",
-            "content": "Hello. Who are you",
+            "content": "Thủ đô của Pháp là gì?",
+        },
+        {
+	    # Câu trả lời của bot
+            "role": "assistant",
+            "content": "Thủ đô của Pháp là Paris.",
+        },
+        {
+	    # Câu hỏi tiếp theo của bạn
+            "role": "user",
+            "content": "Tới đó rồi thì nên đi đâu chơi?",
         }
     ],
     model="gemma2-9b-it",
