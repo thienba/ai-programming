@@ -18,7 +18,7 @@ client = OpenAI(
     base_url="https://api.openai.com/v1",
     # Lấy API Key tại https://platform.openai.com/api-keys
     # Đừng share API Key với bạn bè vì số lượng có hạn
-    api_key='sk-svcacct-UZZmiyqu_QFsyt3Dm5zsOWaPa8PtKT79_ybgsYDisS6Ex450eMHogmgsxdHbKVhT3BlbkFJQc9wP1midJ9qRDly4Z4Ip4esp3m1QJn0a4lle7cvX4kCmOyKP0QInBZvfOrhNAA',
+    api_key='sk-svcacct-xxxxxx',
 )
 
 chat_completion = client.chat.completions.create(

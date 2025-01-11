@@ -17,7 +17,7 @@ from openai import OpenAI
 client = OpenAI(
     base_url="https://api.together.xyz/v1",
     # Làm theo hướng dẫn trong bài, truy cập https://api.together.ai/settings/api-keys để lấy API Key nha
-    api_key='752a76f4b7cb9f122842185bdbc5ca07bba21b60f8a0a77a2588dbb19df6f3a7',
+    api_key='xxxxx',
 )
 
 chat_completion = client.chat.completions.create(
